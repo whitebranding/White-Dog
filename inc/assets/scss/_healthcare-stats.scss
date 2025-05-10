@@ -1,0 +1,139 @@
+// Healthcare-Stats-Section
+.healthcare-stats-section {
+  background-image:url(../images/background_image.webp);
+  background-size: cover;
+  .primary-heading {
+    text-align: center;
+    color: var(--primary-white);
+    .underline {
+      margin: 12px auto;
+    }
+  }
+  .stats-wrapper {
+    padding: 15rem 0;
+    @media (max-width: 767px){
+      padding: 5rem 0;
+    }
+    .all-progress-loader {
+      display: grid;
+      align-items: center;
+      margin-top: 9rem;
+      grid-template-columns: auto auto auto auto;
+      row-gap: 6rem;
+    
+      @media (max-width: 767px) {
+        grid-template-columns: auto auto;
+      }
+    
+      .progress {
+        border-right: 1px solid var(--light-border-color);
+        display: grid;
+    
+        @media (max-width: 767px) {
+          &:nth-child(2) {
+            border-right: none;
+          }
+        }
+    
+        &:last-child {
+          border-right: none;
+        }
+    
+        .stats-title {
+          text-align: center;
+          font-family: var(--font-family-bio-rhyme);
+          font-weight: 700;
+          font-size: var(--font-size-sm);
+          color: var(--primary-white);
+          margin-top: 3rem;
+        }
+    
+        .circle-wrap {
+          width: 144px;
+          height: 144px;
+          background: var(--light-border-color);
+          border-radius: 50%;
+          position: relative;
+          justify-self: center;
+        }
+    
+        .circle-wrap .circle .mask,
+        .circle-wrap .circle .fill-1,
+        .circle-wrap .circle .fill-2,
+        .circle-wrap .circle .fill-3,
+        .circle-wrap .circle .fill-4 {
+          width: 144px;
+          height: 144px;
+          position: absolute;
+          border-radius: 50%;
+        }
+    
+        .circle-wrap .circle .mask {
+          clip: rect(0px, 150px, 150px, 72px);
+        }
+    
+        .circle-wrap .inside-circle {
+          width: 132px;
+          height: 132px;
+          border-radius: 50%;
+          background: var(--progress-bg-color);
+          line-height: 120px;
+          text-align: center;
+          margin-top: 6px;
+          margin-left: 6px;
+          color: var(--primary-white);
+          font-family: var(--font-family-bio-rhyme);
+          font-weight: 700;
+          position: absolute;
+          z-index: 100;
+          font-size: var(--font-size-md-bold);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        /* Progress fill color styles */
+        .mask .full-1,
+        .circle .fill-1 {
+          clip: rect(0px, 75px, 150px, 0px);
+          background-color: var(--main-orange);
+        }
+    
+        .mask .full-2,
+        .circle .fill-2 {
+          clip: rect(0px, 75px, 150px, 0px);
+          background-color: var(--main-orange);
+        }
+    
+        .mask .full-3,
+        .circle .fill-3 {
+          clip: rect(0px, 75px, 150px, 0px);
+          background-color: var(--main-orange);
+        }
+    
+        .mask .full-4,
+        .circle .fill-4 {
+          clip: rect(0px, 75px, 150px, 0px);
+          background-color: var(--main-orange);
+        }
+      }
+    }
+    
+  }
+  .dogs-potrait {
+    display: flex;
+    justify-content: center;
+    .dogs-img {
+      width: 80%;
+    }
+  }
+}
+
+
+
+
+
+ 
+  
+  
+  

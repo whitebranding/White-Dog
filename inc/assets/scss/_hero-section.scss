@@ -1,0 +1,212 @@
+// ------Hero-Section-Css-Start----
+.swiper-hero {
+    height: 100%;
+    width: 100%;
+}
+.hero-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .swiper-slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        position: relative;
+
+        .hero-slide-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% + 100px);
+            height: 100%;
+            object-fit: cover;
+            // transform: translateX(-100px);
+        }
+
+        .hero-text-box {
+            padding-top: 32.5rem;
+            padding-bottom: 32.5rem;
+            width: 80%;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            @media (max-width: 1456px) {
+                padding-top: 18.2rem;
+                padding-bottom: 18.2rem;
+            }
+            .hero-heading {
+                font-size: var(--hero-lg-font-size);
+                color: var(--primary-white);
+                font-family: var(--font-family-bio-rhyme);
+                font-weight: bold;
+                line-height: 1.1;
+                width: 70%;
+                @media (max-width: 991px) {
+                    font-size: 7.2rem;
+                }
+                @media (max-width: 767px) {
+                    font-size: 4.2rem;
+                }
+            }
+            .description {
+                font-size: var(--font-size-md-light);
+                color: var(--primary-white);
+                font-family: var(--font-family-spartan);
+                font-weight: 600;
+                line-height: 1.5;
+                padding: 3.2rem 0;
+                width: 50%;
+                @media (max-width: 1200px) {
+                    padding: 2.8rem 0;
+                    width: 70%;
+                }
+                @media (max-width: 991px) {
+                    font-size: var(--font-size-sm);
+                    width: 65%;
+                }
+                @media (max-width: 767px) {
+                    font-size: var(--font-size-xx-sm);
+                    padding: 1.2rem 0;
+                    width: 100%;
+                }
+            }
+            .hero-sm-text {
+                font-size: var(--font-size-x-lg);
+                color: var(--grey-black);
+                width: 57%;
+                @media (max-width: 991px) {
+                    font-size: 4.2rem;
+                    width: 53%;
+                }
+                @media (max-width: 767px) {
+                    font-size: 3.2rem;
+                    width: 72%;
+                }
+            }
+            .orange--text {
+                color: var(--main-orange);
+            }
+            .grey-text {
+                color: var(--grey);
+                font-family: var(--font-family-spartan);
+                font-weight: 600;
+            }
+        }
+    }
+
+    /* Custom Navigation Arrows */
+    .swiper-hero-button-next,
+    .swiper-hero-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 52px;
+        height: 52px;
+        background: var(--main-orange);
+        fill: var(--primary-white);
+        border-radius: 50%;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .swiper-button-disabled {
+        background: var(--primary-white);
+        opacity: 0.302;
+        path {
+            fill: var(--primary-black);
+        }
+    }
+
+    .swiper-hero-button-next {
+        right: 52px; /* Position the next button to the right */
+        @media (max-width: 1200px) {
+            right: 28px;
+            width: 42px;
+            height: 42px;
+            padding: 10px;
+        }
+        @media (max-width: 940px) {
+            right: 28px;
+            width: 38px;
+            height: 38px;
+            padding: 10px;
+        }
+        @media (max-width: 767px) {
+            right: 18px;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+        }
+    }
+
+    .swiper-hero-button-prev {
+        left: 52px; /* Position the prev button to the left */
+        @media (max-width: 1200px) {
+            left: 28px;
+            width: 42px;
+            height: 42px;
+            padding: 10px;
+        }
+        @media (max-width: 940px) {
+            left: 28px;
+            width: 38px;
+            height: 38px;
+            padding: 10px;
+        }
+        @media (max-width: 767px) {
+            left: 18px;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+        }
+    }
+    // Custom-Pagination
+    .swiper-hero-pagination {
+        display: flex;
+        gap: 2px;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        position: absolute;
+        z-index: 1;
+        bottom: 46px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        @media (max-width: 1200px) {
+            bottom: 28px;
+        }
+        @media (max-width: 767px) {
+            bottom: 18px;
+        }
+    }
+    .swiper-hero-pagination .swiper-pagination-bullet {
+        height: 1rem;
+        width: 1rem;
+        background: var(--primary-white);
+        opacity: 0.4;
+        @media (max-width: 940px) {
+            height: 8px;
+            width: 8px;
+        }
+    }
+    .swiper-hero-pagination .swiper-pagination-bullet-active {
+        background: var(--main-orange); //Active bullet color
+        opacity: 1;
+    }
+    .hero-btn {
+        display: flex;
+        gap: 12px;
+        margin-top: 1.6rem;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+}
+
+// ------Hero-Section-Css-end-----

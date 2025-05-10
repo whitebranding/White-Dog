@@ -1,0 +1,103 @@
+// Groomer-section-css
+.groomer-section {
+  padding: 15rem 0;
+  @media (max-width: 767px){
+    padding: 5rem 0;
+  }
+  .container{
+    padding: 0;
+    @media (max-width: 1300px){
+      padding:0 3.2rem;
+    }
+  }
+  .primary-heading {
+    text-align: center;
+    .underline {
+      margin: 12px auto;
+    }
+  }
+  .primary-discription {
+    text-align: center;
+    margin: auto;
+  }
+  .grid{
+    column-gap: 3rem;
+  }
+  .groomers-cards-block {
+    margin-top: 4.4rem;
+    .groomer-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.4rem;
+      padding: 4rem 0;
+      border-radius: 10px;
+      width: 100%;
+      outline: 1px solid var(--border-color);
+      transition: .2s linear;
+      .groomer-img {
+        width: 212px;
+        height: 213px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .groomer-card__content {
+        .groomer-name {
+          font-size: var(--font-size-md);
+          font-family: var(--font-family-bio-rhyme);
+          color: var(--grey-black);
+          font-weight: bold;
+          line-height: 1.25;
+          text-align: center;
+          text-transform: capitalize;
+        }
+        .groomer-job-title {
+          font-family: var(--font-family-spartan);
+          font-weight: 600;
+          font-size: var(--font-size-btn);
+          color: var(--grey);
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          text-align: center;
+          margin-top: 1.4rem;
+        }
+      }
+      .groomer-social-icons {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .groomer-icon-link:link, .groomer-icon-link:visited {
+          text-decoration: none;
+          background-color: var(--icon-bg);
+          width: 41px;
+          height: 41px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          transition: 0.2s ease;
+          .groomer-icon {
+            height: 2rem;
+            width: 2rem;
+            fill: var(--grey);
+          }
+          &:hover {
+            background-color: var(--main-orange);
+            .groomer-icon {
+              fill: var(--primary-white);
+            }
+          }
+        }
+      }
+      &:hover {
+        outline: 2px solid var(--main-orange);
+        box-shadow: 0px 10px 20px 0px var(--box-shadow-color);
+        transition: .2s linear;
+      }
+    }
+  }
+}
+

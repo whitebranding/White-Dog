@@ -1,0 +1,192 @@
+// Healthcare-section-css
+.healthcare-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--grey-bg);
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+    .healthcare-img-block {
+        background: url(/inc/assets/images/dog-healthcare-img.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        position: relative;
+        @media (max-width: 991px) {
+            min-height: 70rem;
+        }
+        .text-banner {
+            background-color: var(--primary-white);
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 2.8rem;
+            max-width: 660px;
+            height: 167px;
+            border-radius: 20px 0 0 20px;
+            padding: 2.4rem;
+            position: absolute;
+            right: 0;
+            bottom: 10rem;
+            @media (max-width: 1200px) {
+                height: 124px;
+            }
+            @media (max-width: 991px) {
+                height: 102px;
+            }
+            @media (max-width: 767px) {
+                height: 82px;
+            }
+            .icon-inner {
+                height: 80px;
+                width: 80px;
+                fill: var(--main-orange);
+                @media (max-width: 991px) {
+                    height: 60px;
+                    width: 60px;
+                }
+                @media (max-width: 767px) {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .banner-inner-text {
+                font-size: var(--font-size-lg);
+                font-family: var(--font-family-bio-rhyme);
+                color: var(--grey-black);
+                font-weight: bold;
+                line-height: 1.294;
+                @media (max-width: 991px) {
+                    font-size: 2.8rem;
+                }
+                @media (max-width: 767px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+    .healthcare-details {
+        max-width: 660px;
+        padding: 10rem 0 10rem 8rem;
+        @media (max-width: 1200px) {
+            padding: 10rem 0 10rem 8rem;
+        }
+        @media (max-width: 991px) {
+            padding: 5rem 0;
+        }
+        /* General Container Styling */
+        .dog-healthcare-services {
+            .container {
+                position: relative;
+            }
+
+            /* Service Item Layout */
+            .service-item {
+                display: flex;
+                align-items: center;
+                position: relative;
+                &:last-child > .service-content {
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+                /* Icon Styling */
+                .service-icon {
+                    width: 85px;
+                    height: 85px;
+                    background-color: var(--grey-bg);
+                    border: 2px solid var(--main-orange);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: -30px; /* To overlap the vertical line */
+                    @media (max-width: 991px) {
+                        height: 75px;
+                        width: 75px;
+                        left: -15px;
+                    }
+                    @media (max-width: 767px) {
+                        height: 65px;
+                        width: 65px;
+                    }
+                    .icon-inner {
+                        height: 40px;
+                        width: 40px;
+                        fill: var(--main-orange);
+                        line-height: 1.2;
+                    }
+                }
+
+                /* Service Content */
+                .service-content {
+                    margin-left: 80px;
+                    padding: 30px 0;
+                    border-bottom: 1px solid var(--border-color);
+                    @media (max-width: 767px) {
+                        margin-left: 60px;
+                    }
+                    .service-name {
+                        font-family: var(--font-family-bio-rhyme);
+                        font-size: var(--font-size-md);
+                        font-weight: 700;
+                        color: var(--grey-black);
+                        margin-bottom: 10px;
+                        line-height: 1.2;
+                    }
+                    .service-detail {
+                        color: var(--grey);
+                        font-size: var(--font-size-x-sm);
+                        font-family: var(--font-family-spartan);
+                        font-weight: 500;
+                        line-height: 1.665;
+                    }
+                }
+            }
+            /* Vertical Line */
+            .container:before {
+                content: '';
+                position: absolute;
+                left: 42px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color: var(--main-orange);
+                height: 400px;
+                margin: auto;
+                @media (max-width: 991px) {
+                    left: 42px;
+                    height: 347px;
+                }
+                @media (max-width: 767px) {
+                    height: 332px;
+                }
+            }
+            //   Buttons
+            .dog-healthcare-buttons {
+                display: flex;
+                margin: 3rem 0;
+                gap: 1rem;
+                @media (max-width: 991px) {
+                    justify-content: center;
+                    flex-direction: column;
+                    padding: 0 2.5rem;
+                }
+                .btn {
+                    font-family: var(--font-family-bio-rhyme);
+                    font-weight: bold;
+                    font-size: var(--font-size-x-sm);
+                    text-transform: capitalize;
+                    letter-spacing: 0;
+                }
+                .btn--white {
+                    color: var(--primary-white);
+                    background-color: var(--grey-black);
+                    &:hover {
+                        background-color: var(--main-orange);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,318 @@
+@import 'https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Spartan:wght@100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+:root {
+    // Colours-Variables
+    --primary-white: #ffffff;
+    --main-orange: #ff6d2d;
+    --primary-black: #000000;
+    --grey-black: #181818;
+    --grey: #818181;
+    --grey-bg: #f2f5f7;
+    --icon-bg: #f0f0f0;
+    --overlay-color: rgba(255, 109, 45, 0.8);
+    --box-shadow-color: rgba(255, 109, 45, 0.3);
+    --bg-orange-semi-transparent: rgba(199, 61, 0, 0.8);
+    --bg-orange-transparent: rgba(199, 61, 0, 0.6);
+    --bg-black-transparent: rgba(0, 0, 0, 0.5);
+    --bg-popup-color: rgba(0, 0, 0, 0.8);
+    --bg-black-semi-transparent: rgba(24, 24, 24, 0);
+    --border-color: #e5e5e5;
+    --light-border-color: rgba(255, 255, 255, 0.2);
+    --sky-bg-color: #d4e5f3;
+    --progress-bg-color: #363435;
+    --footer-bg-color: #2b2b2b;
+    --overlay-color: rgba(255, 109, 45, 0.8);
+    --line-color: #d9dee1;
+    --border-color: #d9dee1;
+    --yello-bg-color: rgb(255, 210, 0);
+    --icon-color: #b5b5b5;
+    --submenu-bg-hover-color: #e84700;
+
+    // Font-size-variables
+    --hero-lg-font-size: 10rem;
+    --font-size-btn: 1.2rem;
+    --font-size-xx-sm: 1.4rem;
+    --font-size-x-sm: 1.6rem;
+    --font-size-sm: 1.8rem;
+    --font-size-md-light: 2rem;
+    --font-size-md: 2.4rem;
+    --font-size-md-bold: 3rem;
+    --font-size-lg: 3.4rem;
+    --font-size-x-lg: 6rem;
+
+    // Font-family-Variables
+    --font-family-bio-rhyme: 'BioRhyme';
+    --font-family-spartan: 'Spartan';
+    --font-family-arvo: 'Arvo', serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    @media (max-width: 1200px) {
+        font-size: 56.25%;
+    }
+    @media (max-width: 991px) {
+        font-size: 50%;
+    }
+}
+body {
+    line-height: 1;
+    overflow-x: hidden;
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: var(--main-orange);
+}
+/*--------------------
+ Back to Top Button
+---------------------*/
+.scrollToTopBtn {
+    background-color: var(--main-orange);
+    border: none;
+    border-radius: 50%;
+    fill: var(--primary-white);
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /* keep it on top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.5s ease;
+    svg {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+// Fade-in-up-keyframe
+@keyframes customFadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+.custom-fadeInUp {
+    animation-name: customFadeInUp;
+}
+// =====
+// Fade-in-Left-keyframe
+@keyframes fadeInLeftSmall {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInLeftSmall {
+    animation: fadeInLeftSmall 1s ease forwards;
+}
+// =====
+// Fade-in-Right-keyframe
+@keyframes fadeInRightSmall {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.fadeInRightSmall {
+    animation: fadeInRightSmall 1s ease forwards;
+}
+// =====
+// ----Reusable-Css-start---
+// Headings
+.primary-heading {
+    font-size: var(--font-size-x-lg);
+    font-family: var(--font-family-bio-rhyme);
+    color: var(--grey-black);
+    font-weight: 700;
+    text-align: left;
+    @media (max-width: 991px) {
+        text-align: center;
+        font-size: 4.2rem;
+    }
+    .orange-dot {
+        color: var(--main-orange);
+    }
+    .underline {
+        height: 4px;
+        border: 2px solid var(--main-orange);
+        width: 80px;
+        margin: 12px 0;
+        background-color: var(--main-orange);
+        display: block;
+        @media (max-width: 991px) {
+            margin: 12px auto;
+        }
+    }
+}
+.primary-discription {
+    font-family: var(--font-family-spartan);
+    font-weight: 500;
+    font-size: var(--font-size-x-sm);
+    text-align: right;
+    color: var(--grey);
+    line-height: 1.875;
+    width: 50%;
+    @media (max-width: 991px) {
+        text-align: center;
+        font-size: var(--font-size-x-sm);
+        width: 100%;
+    }
+}
+.container {
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+.grid {
+    display: grid;
+    column-gap: 4.8rem;
+    row-gap: 9.6rem;
+    @media (max-width: 1200px) {
+        column-gap: 3.2rem;
+        row-gap: 7.2rem;
+    }
+}
+.grid-4-col {
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+p {
+    font-family: var(--font-family-spartan);
+    font-weight: 500;
+    font-size: var(--font-size-x-sm);
+    color: var(--grey);
+    line-height: 1.883;
+}
+/* BUTTONS */
+.btn,
+.btn:link,
+.btn:visited {
+    font-family: var(--font-family-spartan);
+    font-weight: bold;
+    font-size: var(--font-size-btn);
+    text-decoration: none;
+    padding: 22px 52px 20px;
+    letter-spacing: 2px;
+    border-radius: 48px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    @media (max-width: 991px) {
+        padding: 18px 38px 16px;
+        letter-spacing: 1px;
+    }
+    @media (max-width: 767px) {
+        padding: 12px 32px 10px;
+    }
+}
+
+.btn--orange:link,
+.btn--orange:visited {
+    background-color: var(--main-orange);
+    color: var(--primary-white);
+}
+
+.btn--orange:hover,
+.btn--orange:active {
+    background-color: var(--primary-white);
+    color: var(--main-orange);
+}
+.btn--white:link,
+.btn--white:visited {
+    background-color: var(--primary-white);
+    color: var(--main-orange);
+}
+
+.btn--white:hover,
+.btn--white:active {
+    background-color: var(--main-orange);
+    color: var(--primary-white);
+}
+/* BUTTONS */
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+// ----Reusable-Css-end----
+
+@import '_hero-section.scss'; //Hero-Section-css
+@import '_what-we-do.scss'; //What-we-do-Section-css
+@import '_services.scss'; //What-we-do-Section-css
+@import '_about-us-v1.scss'; //About-us-v1-Section-css
+@import '_about-us-v2.scss'; //About-us-v2-Section-css
+@import '_feedback-section.scss'; //Feedback-Section-css
+@import '_breeds.scss'; //breeds-section-css
+@import '_healthcare-section.scss'; //health-care-css
+@import '_groomers.scss'; //groomers-section-css
+@import '_healthcare-stats.scss'; //healthcare-stats-section
+@import '_footer.scss'; //footer-css
+@import '_questionaire.scss'; //question-section
+@import '_page-header.scss'; //page-header-section
+@import '_contact-address.scss'; //page-header-section
+@import '_contact-form.scss'; //Contact-form
+@import '_gallery.scss'; //Gallery-section-css
+@import '_gallery-detail.scss'; //Gallery-Detail-section
+@import '_news-detail.scss'; //Gallery-Detail-section
+@import '_service-detail.scss'; //Service-Detail-Section
+@import '_news.scss'; //News-Section
+@import '_error-page.scss'; //Error-page Scss
+@import '_announcement-bar.scss'; //Announcement-bar Scss
+@import 'header';
+@import 'hamburger';
