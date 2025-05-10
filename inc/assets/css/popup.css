@@ -8,14 +8,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
+    z-index: 99999;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.header {
-    z-index: 10 !important;
 }
 
 .shop-popup.active {
@@ -31,7 +27,7 @@
     border-radius: 10px;
     padding: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
+    z-index: 100000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,29 +76,7 @@
 
 /* Ensure confetti appears above the popup */
 canvas {
-    z-index: 2100 !important;
+    z-index: 100001 !important;
     pointer-events: none;
 }
 
-/* Wavy underline on menu hover */
-.navigation-menu.desktop > li > a:hover,
-.navigation-menu.desktop > li > a:focus,
-.navigation-menu.mobile > li > a:hover,
-.navigation-menu.mobile > li > a:focus {
-    position: relative;
-    text-decoration: none;
-}
-.navigation-menu.desktop > li > a:hover::after,
-.navigation-menu.desktop > li > a:focus::after,
-.navigation-menu.mobile > li > a:hover::after,
-.navigation-menu.mobile > li > a:focus::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -2px;
-    height: 3px;
-    border-bottom: 3px wavy #ff9800;
-    width: 100%;
-    pointer-events: none;
-}
