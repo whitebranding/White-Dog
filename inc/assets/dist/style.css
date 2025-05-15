@@ -1073,6 +1073,12 @@ p {
     font-size: 1.8rem;
   }
 }
+.about-text{
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  line-height: 2;
+}
+
 .about-us-section .about-text-block {
   background: url(6237136203417b99da4e.png);
   padding: 10rem 0;
@@ -1335,6 +1341,7 @@ p {
   .about-us-v2-section .image-container .video-container .video-wrapper .video-play-banner .video-text-box .video-heading {
     width: 100%;
   }
+
 }
 .about-us-v2-section .image-container .video-container .video-wrapper .video-play-banner .video-text-box .watch-video {
   font-size: var(--font-size-x-sm);

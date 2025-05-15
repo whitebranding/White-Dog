@@ -648,7 +648,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Activate the second card by default (index 1) when the page loads
     if (cards[1]) {
-      activateCard(1);
+      activateCard(0);
     }
   }
 })();
