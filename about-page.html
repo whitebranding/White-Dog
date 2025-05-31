@@ -1,733 +1,1029 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>White Dog</title>
-      
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="inc/assets/images/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="inc/assets/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="inc/assets/images/favicon-16x16.png">
-      
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="inc/assets/dist/style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-      
-        <!-- Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-      
-        <!-- Unbundled JS Scripts (now plain JS, no module/imports) -->
-        <script src="inc/assets/js/scroll.js" defer></script>
-        <script src="inc/assets/js/nav.js" defer></script>
-        <script src="inc/assets/js/mobile-nav.js" defer></script>
-        <script src="inc/assets/js/main.js" defer></script>        
-        
-      </head>
-    <body>
-        <!-- Header-start -->
-        <header class="header sticky-nav">
-            <div class="container">
-                <div class="header-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>White Dog</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="inc/assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="inc/assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="inc/assets/images/favicon-16x16.png"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="inc/assets/dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <!-- Unbundled JS Scripts (now plain JS, no module/imports) -->
+    <script src="inc/assets/js/scroll.js" defer></script>
+    <script src="inc/assets/js/nav.js" defer></script>
+    <script src="inc/assets/js/mobile-nav.js" defer></script>
+    <script src="inc/assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Header-start -->
+    <header class="header sticky-nav">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="index.html" class="logo">
+            <img
+              class="hide-sticky"
+              src="inc/assets/images/logo-light.png"
+              alt="whitedog"
+            />
+            <img
+              class="show-sticky"
+              src="inc/assets/images/logo-dark.png"
+              alt="whitedog"
+            />
+          </a>
+          <div class="header-inner-wrapper">
+            <div class="navigation-menu-wrapper menu-b538310 desktop-wrapper">
+              <ul id="menu-main-menu" class="navigation-menu desktop">
+                <li class="menu-item menu-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item menu-item">
+                  <a href="about-page.html">About</a>
+                </li>
+                <li class="menu-item menu-item">
+                  <a href="service-page.html">Services</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contact-us-page.html"> Contact </a>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                  <a>More</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="gallery-page.html">Gallery</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="breeds-page.html">Breeds</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="search">
+              <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <title>magnify</title>
+                  <path
+                    d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                  />
+                </svg>
+              </div>
+              <div class="search-dropdown">
+                <form>
+                  <label>
+                    <span class="visually-hidden">Search for:</span>
+                    <input
+                      type="search"
+                      class="search-field"
+                      placeholder="Search …"
+                      value=""
+                      name="s"
+                    />
+                  </label>
+                  <button type="submit" class="search-submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <title>magnify</title>
+                      <path
+                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                      />
+                    </svg>
+                  </button>
+                </form>
+                <svg
+                  class="arrow-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <title>menu-up</title>
+                  <path d="M7,15L12,10L17,15H7Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="hamburger direction-left">
+              <div class="hamburger-wrapper">
+                <div class="hamburger-icon">
+                  <div class="bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+                </div>
+                <div class="hamburger-content">
+                  <div class="hamburger-content-header">
                     <a href="index.html" class="logo">
-                        <img class="hide-sticky" src="inc/assets/images/logo-light.png" alt="whitedog">
-                        <img class="show-sticky" src="inc/assets/images/logo-dark.png" alt="whitedog">
+                      <img
+                        src="inc/assets/images/logo-light.png"
+                        alt="whitedog"
+                      />
                     </a>
-                    <div class="header-inner-wrapper">
-                        <div class="navigation-menu-wrapper menu-b538310 desktop-wrapper">
-                            <ul id="menu-main-menu" class="navigation-menu desktop">
-                                <li class="menu-item menu-item">
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li class="menu-item menu-item">
-                                    <a href="about-page.html">About</a>
-                                </li>
-                                <li class="menu-item menu-item">
-                                    <a href="service-page.html">Services</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="contact-us-page.html"> Contact </a>
-                                </li>
-                                <li class="menu-item menu-item-has-children">
-                                    <a href="#">More</a>
-                                    <ul class="sub-menu">
-                                        <li class="menu-item">
-                                            <a href="gallery-page.html">Gallery</a>
-                                        </li>
-                                        <li class="menu-item">
-                                            <a href="breeds-page.html">Breeds</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="search">
-                            <div class="search-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <title>magnify</title>
-                                    <path
-                                        d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-                                    />
-                                </svg>
-                            </div>
-                            <div class="search-dropdown">
-                                <form>
-                                    <label>
-                                        <span class="visually-hidden">Search for:</span>
-                                        <input
-                                            type="search"
-                                            class="search-field"
-                                            placeholder="Search …"
-                                            value=""
-                                            name="s"
-                                        >
-                                    </label>
-                                    <button type="submit" class="search-submit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <title>magnify</title>
-                                            <path
-                                                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
-                                            />
-                                        </svg>
-                                    </button>
-                                </form>
-                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <title>menu-up</title>
-                                    <path d="M7,15L12,10L17,15H7Z" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="hamburger direction-left">
-                            <div class="hamburger-wrapper">
-                                <div class="hamburger-icon">
-                                    <div class="bars">
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                        <div class="bar"></div>
-                                    </div>
-                                </div>
-                                <div class="hamburger-content">
-                                    <div class="hamburger-content-header">
-                                        <a href="index.html" class="logo">
-                                            <img src="inc/assets/images/logo-light.png" alt="whitedog">
-                                        </a>
-                                        <div class="hamburger-close">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <title>window-close</title>
-                                                <path
-                                                    d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="navigation-menu-wrapper">
-                                        <ul class="navigation-menu mobile">
-                                            <li class="menu-item menu-item">
-                                                <a href="index.html">Home</a>
-                                            </li>
-                                            <li class="menu-item menu-item">
-                                                <a href="about-page.html">About</a>
-                                            </li>
-                                            <li class="menu-item menu-item">
-                                                <a href="service-page.html">Services</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="contact-us-page.html"> Contact </a>
-                                            </li>
-                                            <li class="menu-item menu-item-has-children">
-                                                <a href="#">
-                                                    More
-                                                    <div class="icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                                                            <path
-                                                                d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"
-                                                            ></path>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                                <ul class="sub-menu">
-                                                    <li class="back-button">
-                                                        <a href="#">
-                                                            <div class="icon">
-                                                                <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    viewBox="0 0 256 512"
-                                                                >
-                                                                    <path
-                                                                        d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"
-                                                                    ></path>
-                                                                </svg>
-                                                            </div>
-                                                            Back
-                                                        </a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                         <a href="gallery-page.html">Gallery</a>
-                                                    </li>
-                                                    <li class="menu-item">
-                                                        <a href="breeds-page.html">Breeds</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="hamburger-close">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <title>window-close</title>
+                        <path
+                          d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"
+                        />
+                      </svg>
                     </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header-end -->
-
-        <!-- page-header-section-start -->
-        <section class="page-header-section wow animate__animated animate__fadeIn">
-            <div class="text-block wow animate__animated custom-fadeInUp">
-                <h2 class="primary-heading">About us</h2>
-                <nav aria-label="Breadcrumb" class="breadcrumb">
-                    <ul>
-                        <li><a class="page-link" href="index.html">Home</a></li>
-                        <li><span aria-current="page">About us</span></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <!-- page-header-section-end -->
-
-        <!-- What-we-do-v3-section -->
-        <section class="features-section">
-            <div class="container">
-                <div class="headings wow animate__animated animate__fadeIn">
-                    <h1 class="primary-heading">
-                     What we do<span class="orange-dot">.</span><br>
-                        <span class="underline" ></span>
-                    </h1>
-                    <p class="primary-discription">
-                        Where pet care meets passion — grooming, training, and love under one roof.
-                    </p>
-                </div>
-                <div class="about-feature-wrapper">
-                    <a href="/service-page.html" class="about-feature-card wow animate__animated custom-fadeInUp" data-wow-delay="0s">
-                        <img src="./inc/assets/images/gallery-img-3.png" alt="Dog with boy img" class="about-feature-img" >
-                        <div class="about-feature-content">
-                            <h3 class="title">Professional Grooming</h3>
-                            <p class="feature-text">
-                                Give your pet a fresh, clean look with our expert grooming services — designed for comfort, hygiene, and overall well-being.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="/service-page.html" class="about-feature-card wow animate__animated custom-fadeInUp" data-wow-delay="0.25s">
-                        <img src="./inc/assets/images/gallery-img-7.png" alt="Dog with Doctor img" class="about-feature-img" >
-                        <div class="about-feature-content">
-                            <h3 class="title">Healthcare Department</h3>
-                            <p class="feature-text">
-                                Comprehensive health checks, vaccinations, and medical care — all under one roof to keep your pet healthy and protected.
-                            </p>
-                        </div>
-                    </a>
-                    <a href="/service-page.html" class="about-feature-card wow animate__animated custom-fadeInUp" data-wow-delay="0.5s">
-                        <img src="./inc/assets/images/service-img-6.webp" alt="Dog img" class="about-feature-img" >
-                        <div class="about-feature-content">
-                            <h3 class="title">Walking & Training</h3>
-                            <p class="feature-text">
-                                Daily walks and basic training that boost fitness, improve behavior, and keep your pet happy and well-adjusted.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- What-we-do-v3-section -->
-
-        <!-- About-us-section-start -->
-        <section class="about-us-v2-section">
-            <div class="image-container">
-                <!-- Background Image -->
-                <div class="video-container">
-                    <div class="container">
-                        <div class="video-wrapper wow animate__animated custom-fadeInUp">
-                            <a href="" class="video-block" id="videoTrigger">
-                                <img src="./inc/assets/images/video-img-2.png" alt="video-img-2" class="about-v2-img" >
-                                <div class="video-play-banner wow animate__animated animate__fadeIn">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
-                                    </svg>
-
-                                    <div class="video-text-box">
-                                        <h5 class="video-heading">Thrissur's no.1 dog breeding & training center.</h5>
-                                        <p class="watch-video">Watch the Video.</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <!-- Modal Structure -->
-                            <div id="videoModal" class="modal" style="display: none">
-                                <div class="modal-content">
-                                    <svg class="close-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>close</title>
-                                        <path
-                                            d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
-                                        />
-                                    </svg>
-
-                                    <iframe
-                                        height="315"
-                                        id="videoIframe"
-                                        title="YouTube video player"
-                                        referrerpolicy="strict-origin-when-cross-origin"
-                                        allowfullscreen
-                                    ></iframe>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-us-services-section">
-                            <!-- Accordian-section -->
-                            <div class="accordian-section wow animate__animated custom-fadeInUp">
-                                <h1 class="primary-heading">
-                                    Who we are
-                                    <span class="underline" ></span>
-                                </h1>
-                                <div class="accordian-block">
-                                    <button class="accordion">
-                                        <!-- Plus Icon (initially visible) -->
-                                        <span class="icon accordian-plus-icon">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        <!-- Minus Icon (initially hidden) -->
-                                        <span class="icon accordian-minus-icon" style="display: none">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H5V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        Professional treatments
-                                    </button>
-                                    <div class="panel">
-                                        <p>
-                                            Professional grooming and care tailored to your pet’s needs — from clean coats to healthy skin, all handled by trained experts in a calm and caring space.
-                                    </div>
-                                </div>
-                                <div class="accordian-block">
-                                    <button class="accordion active">
-                                        <!-- Plus Icon (initially visible) -->
-                                        <span class="icon accordian-plus-icon" style="display: none">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        <!-- Minus Icon (initially hidden) -->
-                                        <span class="icon accordian-minus-icon" style="display: inline">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H5V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        Pet care guide
-                                    </button>
-                                    <div class="panel open">
-                                        <p>
-                                            A simple, expert-backed guide to keep your pet healthy, happy, and active — from daily routines to seasonal tips, all in one place.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="accordian-block">
-                                    <button class="accordion">
-                                        <!-- Plus Icon (initially visible) -->
-                                        <span class="icon accordian-plus-icon">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        <!-- Minus Icon (initially hidden) -->
-                                        <span class="icon accordian-minus-icon" style="display: none">
-                                            <svg viewBox="0 0 24 24">
-                                                <path d="M19,13H5V11H19V13Z" />
-                                            </svg>
-                                        </span>
-
-                                        Diets & Nutrition
-                                    </button>
-                                    <div class="panel">
-                                        <p>
-                                            Balanced meals, smart portions, and the right nutrients — everything your pet needs for a healthy, energetic life, tailored to their breed and age.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Toggle-card-section -->
-                            <div class="toggle-card-section wow animate__animated custom-fadeInUp">
-                                <h1 class="primary-heading">
-                                    What we do
-                                    <span class="underline" ></span>
-                                </h1>
-                                <div class="tab--block">
-                                    <button class="tab-links active-tab" id="showCardTab1">Pet Training</button>
-                                    <button class="tab-links" id="showCardTab2">Pet Washing</button>
-                                    <button class="tab-links" id="showCardTab3">Pet Healthcare</button>
-                                </div>
-                                <!--Card-1 -->
-                                <div class="toggle-card" id="card1">
-                                    <img
-                                        src="./inc/assets/images/girl-dog-img.jpg"
-                                        alt="service-img"
-                                        class="toggle-card-img"
-                                    >
-                                    <p class="card-text">
-                                        Seas bearing divided so moveth him tree in winged air she'd greater from don't
-                                        them bearing wherein bring day called seed seas void firmament lights, grass had
-                                        the their. May from seas created fruitful.
-                                    </p>
-                                </div>
-                                <!--Card-2 -->
-                                <div class="toggle-card hidden" id="card2">
-                                    <img
-                                        src="./inc/assets/images/groomer-img-3.png"
-                                        alt="service-img"
-                                        class="toggle-card-img"
-                                    >
-                                    <p class="card-text">
-                                        In gentle streams and playful sprays, we bring forth the wash, a ritual of care
-                                        and kindness, for fur and feather alike. As waters meet, so too does the grime
-                                        of the earth retreat, leave a freshness renewed.
-                                    </p>
-                                </div>
-                                <!--Card-3 -->
-                                <div class="toggle-card hidden" id="card3">
-                                    <img
-                                        src="./inc/assets/images/girl-dog-img.jpg"
-                                        alt="service-img"
-                                        class="toggle-card-img"
-                                    >
-                                    <p class="card-text">
-                                        Through every gentle care and watchful eye, let health be sustained in the life
-                                        of each small creature. Breathing, moving, and leaping through days of light,
-                                        let them grow in strength, as nature intended
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About-us-section-end -->
-
-        <!-- Healthcare-stats-Section-start -->
-        <section class="healthcare-stats-section">
-            <div class="stats-wrapper">
-                <div class="container">
-                    <h1 class="primary-heading wow animate__animated animate__fadeIn">
-                     Healthcare stats<span class="orange-dot">.</span><br>
-                        <span class="underline" ></span>
-                    </h1>
-                    <div class="all-progress-loader">
-                        <div class="progress">
-                            <div class="circle-wrap">
-                                <div class="circle">
-                                    <div class="mask full-1">
-                                        <div class="fill-1"></div>
-                                    </div>
-                                    <div class="mask half">
-                                        <div class="fill-1"></div>
-                                    </div>
-                                    <div class="inside-circle">785</div>
-                                </div>
-                            </div>
-                            <p class="stats-title">Pet Treatments</p>
-                        </div>
-                        <div class="progress">
-                            <div class="circle-wrap">
-                                <div class="circle">
-                                    <div class="mask full-2">
-                                        <div class="fill-2"></div>
-                                    </div>
-                                    <div class="mask half">
-                                        <div class="fill-2"></div>
-                                    </div>
-                                    <div class="inside-circle">623</div>
-                                </div>
-                            </div>
-                            <p class="stats-title">Pet Trainings</p>
-                        </div>
-                        <div class="progress">
-                            <div class="circle-wrap">
-                                <div class="circle">
-                                    <div class="mask full-3">
-                                        <div class="fill-3"></div>
-                                    </div>
-                                    <div class="mask half">
-                                        <div class="fill-3"></div>
-                                    </div>
-                                    <div class="inside-circle">519</div>
-                                </div>
-                            </div>
-                            <p class="stats-title">Happy People</p>
-                        </div>
-                        <div class="progress">
-                            <div class="circle-wrap">
-                                <div class="circle">
-                                    <div class="mask full-4">
-                                        <div class="fill-4"></div>
-                                    </div>
-                                    <div class="mask half">
-                                        <div class="fill-4"></div>
-                                    </div>
-                                    <div class="inside-circle">246</div>
-                                </div>
-                            </div>
-                            <p class="stats-title">Pet Breeds</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dogs-potrait wow animate__animated animate__fadeIn">
-                <img src="./inc/assets/images/portrait-beagle-puppies-grey-updated.png" alt="Puppies Portrait" class="dogs-img" >
-            </div>
-        </section>
-        <!-- Healthcare-stats-Section-end -->
-
-        <!-- Questionaire-section-start -->
-        <section class="questionaire-section-2 wow animate__animated animate__fadeIn">
-            <div class="container">
-                <div class="question-block">
-                    <div class="question wow animate__animated fadeInLeftSmall">
-                        <div class="question-icon">
-                            <svg class="dog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>dog-side</title>
-                                <path
-                                    d="M19,3L15,7L18,10L19,9L20,10L22,8L19,5V3M3,7L2,8L5,11V14L4,15V21H6V18L8,15H15V21H17V11L14,8L13,9H5L3,7Z"
-                                />
+                  </div>
+                  <div class="navigation-menu-wrapper">
+                    <ul class="navigation-menu mobile">
+                      <li class="menu-item menu-item">
+                        <a href="index.html">Home</a>
+                      </li>
+                      <li class="menu-item menu-item">
+                        <a href="about-page.html">About</a>
+                      </li>
+                      <li class="menu-item menu-item">
+                        <a href="service-page.html">Services</a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="contact-us-page.html"> Contact </a>
+                      </li>
+                      <li class="menu-item menu-item-has-children">
+                        <a href="#">
+                          More
+                          <div class="icon">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 256 512"
+                            >
+                              <path
+                                d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"
+                              ></path>
                             </svg>
-                        </div>
-                        <h1 class="question-text">Want your dog to smell like clouds?</h1>
-                    </div>
-                    <div class="question-btn">
-                        <a href="/contact-us-page.html" class="btn btn--orange wow animate__animated animate__pulse" data-wow-duration="2s"
-                            >Visit Us</a
-                        >
-                        <a href="/about-page.html" class="btn btn--white wow animate__animated animate__pulse" data-wow-duration="2s"
-                            >Know More</a
-                        >
-                    </div>
+                          </div>
+                        </a>
+                        <ul class="sub-menu">
+                          <li class="back-button">
+                            <a href="#">
+                              <div class="icon">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 256 512"
+                                >
+                                  <path
+                                    d="M219.9 266.7L75.89 426.7c-5.906 6.562-16.03 7.094-22.59 1.188c-6.918-6.271-6.783-16.39-1.188-22.62L186.5 256L52.11 106.7C46.23 100.1 46.75 90.04 53.29 84.1C59.86 78.2 69.98 78.73 75.89 85.29l144 159.1C225.4 251.4 225.4 260.6 219.9 266.7z"
+                                  ></path>
+                                </svg>
+                              </div>
+                              Back
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="gallery-page.html">Gallery</a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="breeds-page.html">Breeds</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- Questionaire-section-end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header-end -->
 
-        <!-- Footer-html-start -->
-        <!-- Footer-html-start -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-wrapper grid grid-4-col">
-                    <!-- About-col -->
-                    <div class="about-col">
-                        <h4 class="sub-heading">About</h4>
-                        <p class="footer-description">
-                            Caring for your pets with expertise and love — whenever they need us, we're here.
-                        <ul class="footer-social-links">
-                            <li>
-                                <a href="https://www.instagram.com/whitedog_official/?hl=en" target="_blank" class="social-link">
-                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>instagram</title>
-                                        <path
-                                            d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
-                                        />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/whitedogofficial" target="_blank" class="social-link"
-                                    ><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>facebook</title>
-                                        <path
-                                            d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
-                                        /></svg>
-                                    </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/919995888441" target="_blank" class="social-link">
-                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>whatsapp</title><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" /></svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/@whitedogpetpartner3551" target="_blank" class="social-link">
-                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>youtube</title><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" /></svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Links-col -->
-                    <div class="links-col">
-                        <h4 class="sub-heading">links</h4>
-                        <ul class="footer-nav">
-                            <li>
-                                <a href="./about-page.html" class="footer-link">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg>
-                                    About</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./gallery-page.html" class="footer-link">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
-                                    </svg>
-                                    Gallery
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./service-page.html" class="footer-link">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg
-                                    >Services</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./breeds-page.html" class="footer-link">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
-                                    </svg>
-                                    Breeding
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./contact-us-page.html" class="footer-link">
-                                    <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>play</title>
-                                        <path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg
-                                    >Contact</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Our-Dogs-col -->
-                    <div class="our-dogs-col">
-                        <h4 class="sub-heading">Our dogs</h4>
-                        <div class="dogs-face-imgs">
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-1.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-2.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-3.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-4.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-5.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-6.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-7.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                            <a href="./gallery-page.html">
-                                <div class="footer-img">
-                                    <img src="./inc/assets/images/dog-8.png" alt="Dog face img" >
-                                    <div class="overlay"></div>
-                                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <title>plus</title>
-                                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Subscribe-col -->
-                    <div class="map-section">
-                        <h4 class="sub-heading">Find Us</h4>
-                      
-                        <div class="map" style="margin-top: 3rem;" >
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15690.863392910285!2d76.20618757007838!3d10.523032095882407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef92d9604c11%3A0x965344f52b0d0664!2sWHITE%20DOG%20PET%20PARTNER!5e0!3m2!1sen!2sin!4v1746772290838!5m2!1sen!2sin" width="130%" height="300px" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                      </div>
-                      
-                </div>
-                <p class="copyright">© White Dog</p>
+    <!-- page-header-section-start -->
+    <section class="page-header-section wow animate__animated animate__fadeIn">
+      <div class="text-block wow animate__animated custom-fadeInUp">
+        <h2 class="primary-heading">About us</h2>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ul>
+            <li><a class="page-link" href="index.html">Home</a></li>
+            <li><span aria-current="page">About us</span></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- page-header-section-end -->
+
+    <!-- What-we-do-v3-section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="headings wow animate__animated animate__fadeIn">
+          <h1 class="primary-heading">
+            Who we are<span class="orange-dot">.</span><br />
+            <span class="underline"></span>
+          </h1>
+          <p class="primary-discription">
+            More than a pet service — we're a second home for your furry family.
+          </p>
+        </div>
+        <div class="about-feature-wrapper">
+          <a
+            href=""
+            class="about-feature-card wow animate__animated custom-fadeInUp"
+            data-wow-delay="0s"
+          >
+            <img
+              src="./inc/assets/images/gallery-img-3.png"
+              alt="Dog with boy img"
+              class="about-feature-img"
+            />
+            <div class="about-feature-content">
+              <h3 class="title">Trusted Companions</h3>
+              <p class="feature-text">
+                We’re the familiar faces your pet trusts — always gentle, always
+                kind, and always there when it matters.
+              </p>
             </div>
-        </footer>
-        <!-- Footer-html-end -->
-        <!-- ====== SCROLL TO TOP BUTTON ====== -->
-        <button class="scrollToTopBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <title>arrow-up</title>
-                <path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" />
-            </svg>
-        </button>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-        <script>
-            // Initialize WOW.js
-            new WOW().init();
-        </script>
-    </body>
+          </a>
+          <a
+            href=""
+            class="about-feature-card wow animate__animated custom-fadeInUp"
+            data-wow-delay="0.25s"
+          >
+            <img
+              src="./inc/assets/images/gallery-img-2.png"
+              alt="Dog training img"
+              class="about-feature-img"
+            />
+            <div class="about-feature-content">
+              <h3 class="title">Joy Makers</h3>
+              <p class="feature-text">
+                Playdates, walks, training, and tail-wagging adventures — we
+                fill your pet’s day with purpose, fun, and love.
+              </p>
+            </div>
+          </a>
+          <a
+            href=""
+            class="about-feature-card wow animate__animated custom-fadeInUp"
+            data-wow-delay="0.5s"
+          >
+            <img
+              src="./inc/assets/images/gallery-img-7.png"
+              alt="Cozy pet img"
+              class="about-feature-img"
+            />
+            <div class="about-feature-content">
+              <h3 class="title">Comfort Crew</h3>
+              <p class="feature-text">
+                Safe spaces, cozy corners, and familiar routines — we make every
+                visit feel just like home.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- What-we-do-v3-section -->
+
+    <!-- About-us-section-start -->
+    <section class="about-us-v2-section">
+      <div class="image-container">
+        <!-- Background Image -->
+        <div class="video-container">
+          <div class="container">
+            <div class="video-wrapper wow animate__animated custom-fadeInUp">
+              <a href="" class="video-block" id="videoTrigger">
+                <img
+                  src="./inc/assets/images/video-img-2.png"
+                  alt="video-img-2"
+                  class="about-v2-img"
+                />
+                <div
+                  class="video-play-banner wow animate__animated animate__fadeIn"
+                >
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                  </svg>
+
+                  <div class="video-text-box">
+                    <h5 class="video-heading">
+                      Thrissur's no.1 dog breeding & training center.
+                    </h5>
+                    <p class="watch-video">Watch the Video.</p>
+                  </div>
+                </div>
+              </a>
+              <!-- Modal Structure -->
+              <div id="videoModal" class="modal" style="display: none">
+                <div class="modal-content">
+                  <svg
+                    class="close-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>close</title>
+                    <path
+                      d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
+                    />
+                  </svg>
+
+                  <iframe
+                    height="315"
+                    id="videoIframe"
+                    title="YouTube video player"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-us-services-section">
+              <!-- Accordian-section -->
+              <div
+                class="accordian-section wow animate__animated custom-fadeInUp"
+              >
+                <h1 class="primary-heading">
+                  Who we are
+                  <span class="underline"></span>
+                </h1>
+                <div class="accordian-block">
+                  <button class="accordion">
+                    <!-- Plus Icon (initially visible) -->
+                    <span class="icon accordian-plus-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    <!-- Minus Icon (initially hidden) -->
+                    <span
+                      class="icon accordian-minus-icon"
+                      style="display: none"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H5V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    Professional treatments
+                  </button>
+                  <div class="panel">
+                    <p>
+                      Professional grooming and care tailored to your pet’s
+                      needs — from clean coats to healthy skin, all handled by
+                      trained experts in a calm and caring space.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordian-block">
+                  <button class="accordion active">
+                    <!-- Plus Icon (initially visible) -->
+                    <span
+                      class="icon accordian-plus-icon"
+                      style="display: none"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    <!-- Minus Icon (initially hidden) -->
+                    <span
+                      class="icon accordian-minus-icon"
+                      style="display: inline"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H5V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    Pet care guide
+                  </button>
+                  <div class="panel open">
+                    <p>
+                      A simple, expert-backed guide to keep your pet healthy,
+                      happy, and active — from daily routines to seasonal tips,
+                      all in one place.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordian-block">
+                  <button class="accordion">
+                    <!-- Plus Icon (initially visible) -->
+                    <span class="icon accordian-plus-icon">
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    <!-- Minus Icon (initially hidden) -->
+                    <span
+                      class="icon accordian-minus-icon"
+                      style="display: none"
+                    >
+                      <svg viewBox="0 0 24 24">
+                        <path d="M19,13H5V11H19V13Z" />
+                      </svg>
+                    </span>
+
+                    Diets & Nutrition
+                  </button>
+                  <div class="panel">
+                    <p>
+                      Balanced meals, smart portions, and the right nutrients —
+                      everything your pet needs for a healthy, energetic life,
+                      tailored to their breed and age.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Toggle-card-section -->
+              <div
+                class="toggle-card-section wow animate__animated custom-fadeInUp"
+              >
+                <h1 class="primary-heading">
+                  What we do
+                  <span class="underline"></span>
+                </h1>
+                <div class="tab--block">
+                  <button class="tab-links active-tab" id="showCardTab1">
+                    Pet Training
+                  </button>
+                  <button class="tab-links" id="showCardTab2">
+                    Pet Washing
+                  </button>
+                  <button class="tab-links" id="showCardTab3">
+                    Pet Healthcare
+                  </button>
+                </div>
+                <!--Card-1 -->
+                <div class="toggle-card" id="card1">
+                  <img
+                    src="./inc/assets/images/girl-dog-img.jpg"
+                    alt="service-img"
+                    class="toggle-card-img"
+                  />
+                  <p class="card-text">
+Seas moved, trees winged the air — she bore him. From void, firmament rose. Grass grew, seas bore fruit.
+                  </p>
+                </div>
+                <!--Card-2 -->
+                <div class="toggle-card hidden" id="card2">
+                  <img
+                    src="./inc/assets/images/groomer-img-3.png"
+                    alt="service-img"
+                    class="toggle-card-img"
+                  />
+                  <p class="card-text">
+                    In gentle streams and playful sprays, we bring forth the
+                    wash, a ritual of care and kindness, for fur and feather
+                    alike.
+                  </p>
+                </div>
+                <!--Card-3 -->
+                <div class="toggle-card hidden" id="card3">
+                  <img
+                    src="./inc/assets/images/girl-dog-img.jpg"
+                    alt="service-img"
+                    class="toggle-card-img"
+                  />
+                  <p class="card-text">
+                    Through every gentle care and watchful eye, let health be
+                    sustained in the life of each small creature.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-us-section-end -->
+
+    <!-- Healthcare-stats-Section-start -->
+    <section class="healthcare-stats-section">
+      <div class="stats-wrapper">
+        <div class="container">
+          <h1 class="primary-heading wow animate__animated animate__fadeIn">
+            Healthcare stats<span class="orange-dot">.</span><br />
+            <span class="underline"></span>
+          </h1>
+          <div class="all-progress-loader">
+            <div class="progress">
+              <div class="circle-wrap">
+                <div class="circle">
+                  <div class="mask full-1">
+                    <div class="fill-1"></div>
+                  </div>
+                  <div class="mask half">
+                    <div class="fill-1"></div>
+                  </div>
+                  <div class="inside-circle">785</div>
+                </div>
+              </div>
+              <p class="stats-title">Pet Treatments</p>
+            </div>
+            <div class="progress">
+              <div class="circle-wrap">
+                <div class="circle">
+                  <div class="mask full-2">
+                    <div class="fill-2"></div>
+                  </div>
+                  <div class="mask half">
+                    <div class="fill-2"></div>
+                  </div>
+                  <div class="inside-circle">623</div>
+                </div>
+              </div>
+              <p class="stats-title">Pet Trainings</p>
+            </div>
+            <div class="progress">
+              <div class="circle-wrap">
+                <div class="circle">
+                  <div class="mask full-3">
+                    <div class="fill-3"></div>
+                  </div>
+                  <div class="mask half">
+                    <div class="fill-3"></div>
+                  </div>
+                  <div class="inside-circle">519</div>
+                </div>
+              </div>
+              <p class="stats-title">Happy People</p>
+            </div>
+            <div class="progress">
+              <div class="circle-wrap">
+                <div class="circle">
+                  <div class="mask full-4">
+                    <div class="fill-4"></div>
+                  </div>
+                  <div class="mask half">
+                    <div class="fill-4"></div>
+                  </div>
+                  <div class="inside-circle">246</div>
+                </div>
+              </div>
+              <p class="stats-title">Pet Breeds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dogs-potrait wow animate__animated animate__fadeIn">
+        <img
+          src="./inc/assets/images/portrait-beagle-puppies-grey-updated.png"
+          alt="Puppies Portrait"
+          class="dogs-img"
+        />
+      </div>
+    </section>
+    <!-- Healthcare-stats-Section-end -->
+
+    <!-- Questionaire-section-start -->
+    <section
+      class="questionaire-section-2 wow animate__animated animate__fadeIn"
+    >
+      <div class="container">
+        <div class="question-block">
+          <div class="question wow animate__animated fadeInLeftSmall">
+            <div class="question-icon">
+              <svg
+                class="dog-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <title>dog-side</title>
+                <path
+                  d="M19,3L15,7L18,10L19,9L20,10L22,8L19,5V3M3,7L2,8L5,11V14L4,15V21H6V18L8,15H15V21H17V11L14,8L13,9H5L3,7Z"
+                />
+              </svg>
+            </div>
+            <h1 class="question-text">Want your dog to smell like clouds?</h1>
+          </div>
+            <div class="question-btn">
+                <a href="https://groomig.pages.dev/user" class="btn btn--orange wow animate__animated animate__pulse" data-wow-duration="2s"> 
+                    Book Now
+                </a>
+                <a href="contact-us-page.html" class="btn btn--white wow animate__animated animate__pulse" data-wow-duration="2s">
+                    Visit Us
+                </a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Questionaire-section-end -->
+
+    <!-- Footer-html-start -->
+    <!-- Footer-html-start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper grid grid-4-col">
+          <!-- About-col -->
+          <div class="about-col">
+            <h4 class="sub-heading">About</h4>
+            <p class="footer-description">
+              Caring for your pets with expertise and love — whenever they need
+              us, we're here.
+            </p>
+
+            <ul class="footer-social-links">
+              <li>
+                <a
+                  href="https://www.instagram.com/whitedog_official/?hl=en"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>instagram</title>
+                    <path
+                      d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/whitedogofficial"
+                  target="_blank"
+                  class="social-link"
+                  ><svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>facebook</title>
+                    <path
+                      d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/919995888441"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>whatsapp</title>
+                    <path
+                      d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@whitedogpetpartner3551"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>youtube</title>
+                    <path
+                      d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Links-col -->
+          <div class="links-col">
+            <h4 class="sub-heading">links</h4>
+            <ul class="footer-nav">
+              <li>
+                <a href="./about-page.html" class="footer-link">
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                  </svg>
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="./gallery-page.html" class="footer-link">
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                  </svg>
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="./service-page.html" class="footer-link">
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="./breeds-page.html" class="footer-link">
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+                  </svg>
+                  Breeding
+                </a>
+              </li>
+              <li>
+                <a href="./contact-us-page.html" class="footer-link">
+                  <svg
+                    class="icon-play"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>play</title>
+                    <path d="M8,5.14V19.14L19,12.14L8,5.14Z" /></svg
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Our-Dogs-col -->
+          <div class="our-dogs-col">
+            <h4 class="sub-heading">Our dogs</h4>
+            <div class="dogs-face-imgs">
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-1.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-2.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-3.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-4.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-5.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-6.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-7.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+              <a href="./gallery-page.html">
+                <div class="footer-img">
+                  <img src="./inc/assets/images/dog-8.png" alt="Dog face img" />
+                  <div class="overlay"></div>
+                  <svg
+                    class="plus-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>plus</title>
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Subscribe-col -->
+          <div class="footer-column">
+            <h3 class="sub-heading">Find Us</h3>
+
+            <div class="map-tabs">
+              <button class="map-tab-grid active" onclick="switchMap(0)">
+                <svg
+                  class="shop-icon"
+                  mlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <title>store</title>
+                  <path
+                    d="M12,18H6V14H12M21,14V12L20,7H4L3,12V14H4V20H14V14H18V20H20V14M20,4H4V6H20V4Z"
+                  />
+                </svg>
+                <span class="label">Thrissur</span>
+              </button>
+              <button class="map-tab-grid" onclick="switchMap(1)">
+                <svg
+                  class="shop-icon"
+                  mlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <title>store</title>
+                  <path
+                    d="M12,18H6V14H12M21,14V12L20,7H4L3,12V14H4V20H14V14H18V20H20V14M20,4H4V6H20V4Z"
+                  />
+                </svg>
+                <span class="label">Nellikunnu</span>
+              </button>
+              <button class="map-tab-grid" onclick="switchMap(2)">
+                <svg
+                  class="shop-icon"
+                  mlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <title>store</title>
+                  <path
+                    d="M12,18H6V14H12M21,14V12L20,7H4L3,12V14H4V20H14V14H18V20H20V14M20,4H4V6H20V4Z"
+                  />
+                </svg>
+                <span class="label">Kunnamkulam</span>
+              </button>
+            </div>
+
+            <div class="map-container">
+              <iframe
+                class="map-frame active"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.7158483073317!2d76.2036126746089!3d10.52303208961074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef92d9604c11%3A0x965344f52b0d0664!2sWHITE%20DOG%20PET%20PARTNER!5e0!3m2!1sen!2sin!4v1748328046674!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.8421016301254!2d76.24210997460877!3d10.513099989620063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7efa10274c373%3A0x6cace570df84f97f!2sWHITE%20DOG%20PET%20PARTNER%20NELLIKUNNU!5e0!3m2!1sen!2sin!4v1748330480941!5m2!1sen!2sin allowfullscreen="
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.7158483073317!2d76.2036126746089!3d10.52303208961074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ef92d9604c11%3A0x965344f52b0d0664!2sWHITE%20DOG%20PET%20PARTNER!5e0!3m2!1sen!2sin!4v1748328046674!5m2!1sen!2sin"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">© White Dog</p>
+      </div>
+    </footer>
+    <!-- Footer-html-end -->
+    <!-- ====== SCROLL TO TOP BUTTON ====== -->
+
+      <a href="https://wa.me/919995888441" target="_blank">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="white"
+          viewBox="0 0 24 24"
+          class="float"
+        >
+          <path
+            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z"
+          />
+        </svg>
+      </a>
+
+    <button class="scrollToTopBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <title>arrow-up</title>
+        <path
+          d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z"
+        />
+      </svg>
+    </button>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script>
+      // Initialize WOW.js
+      new WOW().init();
+    </script>
+  </body>
 </html>

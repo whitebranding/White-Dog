@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
       initialSlide: 2,
       on: {
         click(event) {
-          console.log("event.target", this.clickedIndex);
           feedbackSwiper.slideTo(this.clickedIndex);
         },
       },
@@ -193,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (phone === "") {
           showError(form, `phone${formNumber}`, "Phone number is required.");
           hasError = true;
-        } else if (!/^\d{11}$/.test(phone)) {
+        } else if (!/^\d{10}$/.test(phone)) {
           showError(
             form,
             `phone${formNumber}`,
@@ -498,8 +497,6 @@ document.addEventListener("DOMContentLoaded", function () {
         element.msMatchesSelector(selector)
       );
     }
-  } else {
-    console.warn("Isotope is not available on this page.");
   }
 })();
 
@@ -836,3 +833,126 @@ document.querySelectorAll(".inside-circle").forEach((circle, index) => {
     }
   );
 });
+
+// map-logic-starts //
+
+function switchMap(index) {
+  const tabs = document.querySelectorAll(".map-tab-grid");
+  const maps = document.querySelectorAll(".map-frame");
+
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle("active", i === index);
+  });
+
+  maps.forEach((map, i) => {
+    map.classList.toggle("active", i === index);
+  });
+}
+
+  let currentIndex = 0;
+
+function slideCarousel(direction) {
+  const track = document.getElementById("carouselTrack");
+  const items = document.querySelectorAll(".reel-item");
+  const gap = 20;
+  const visibleCount = window.innerWidth < 768 ? 1 : 4; // 4 reels on desktop
+  const itemWidth = items[0].offsetWidth + gap;
+
+  const maxIndex = Math.max(0, items.length - visibleCount);
+
+  currentIndex = Math.max(0, Math.min(currentIndex + direction, maxIndex));
+  track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+window.addEventListener("resize", () => slideCarousel(0));
+
+// Lightbox logic
+const reels = document.querySelectorAll(".reel-item");
+const lightbox = document.getElementById("lightbox");
+const lightboxVideo = document.getElementById("lightboxVideo");
+
+reels.forEach(item => {
+  item.addEventListener("click", () => {
+    const video = item.querySelector("video");
+    const src = video.querySelector("source").src;
+    lightboxVideo.src = src;
+    lightboxVideo.muted = false;
+    lightboxVideo.play();
+    lightbox.style.display = "flex";
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightboxVideo.pause();
+  lightboxVideo.src = "";
+  lightbox.style.display = "none";
+});
+
+let startX = 0;
+let isDragging = false;
+
+const track = document.getElementById("carouselTrack");
+track.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  isDragging = true;
+});
+
+track.addEventListener("touchmove", (e) => {
+  if (!isDragging) return;
+  const deltaX = e.touches[0].clientX - startX;
+
+  // Optional: if you want slight dragging effect (not required)
+  // track.style.transform = `translateX(${deltaX}px)`;
+});
+
+track.addEventListener("touchend", (e) => {
+  isDragging = false;
+  const endX = e.changedTouches[0].clientX;
+  const diff = endX - startX;
+
+  if (Math.abs(diff) > 50) {
+    if (diff < 0) {
+      slideCarousel(1); // swipe left → go right
+    } else {
+      slideCarousel(-1); // swipe right → go left
+    }
+  }
+});
+
+// map-logic-end //
+
+// toggle-map-starts //
+
+// toggle-map-ends //
+
+
+
+function openLightbox(src, type) {
+  const lightbox = document.getElementById("lightbox");
+  const img = document.getElementById("lightboxImage");
+  const video = document.getElementById("lightboxVideo");
+
+  if (type === 'image') {
+    img.src = src;
+    img.style.display = 'block';
+    video.style.display = 'none';
+  } else if (type === 'video') {
+    video.src = src;
+    video.style.display = 'block';
+    img.style.display = 'none';
+  }
+
+  lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+  document.getElementById("lightboxImage").src = "";
+  const video = document.getElementById("lightboxVideo");
+  video.pause();
+  video.currentTime = 0;
+  video.src = "";
+}
+
+  
+
