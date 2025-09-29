@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://whitedogpetgrooming.com/sitemap.xml
+
+# Crawl-delay (uncomment if needed)
+# Crawl-delay: 10
+
+# Disallow admin or temp paths if any exist (examples)
+# Disallow: /admin/
+# Disallow: /tmp/
