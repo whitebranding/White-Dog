@@ -3,7 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>White Dog</title>
+    <title>Pet Gallery | White Dog Pet Partner Thrissur</title>
+    <meta name="description" content="Explore our pet grooming and boarding gallery in Thrissur. Real moments from White Dog Pet Partner at MG Road, Nellikunnu, and Kunnamkulam.">
+    <link rel="canonical" href="https://whitedogpetgrooming.com/gallery-page.html" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="White Dog Pet Partner" />
+    <meta property="og:title" content="Pet Gallery | White Dog Pet Partner Thrissur" />
+    <meta property="og:description" content="See our grooming and boarding moments in Thrissur." />
+    <meta property="og:url" content="https://whitedogpetgrooming.com/gallery-page.html" />
+    <meta property="og:image" content="https://whitedogpetgrooming.com/inc/assets/images/video-img-2.png" />
+    <meta property="og:image:alt" content="White Dog Pet Partner gallery" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pet Gallery | White Dog Pet Partner Thrissur" />
+    <meta name="twitter:description" content="See our grooming and boarding moments in Thrissur." />
+    <meta name="twitter:image" content="https://whitedogpetgrooming.com/inc/assets/images/video-img-2.png" />
 
     <!-- Favicon -->
     <link
@@ -53,6 +72,28 @@
     <script src="inc/assets/js/nav.js" defer></script>
     <script src="inc/assets/js/mobile-nav.js" defer></script>
     <script src="inc/assets/js/main.js" defer></script>
+    
+    <!-- Structured Data: Gallery CollectionPage + Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "name": "White Dog Pet Partner Gallery",
+          "url": "https://whitedogpetgrooming.com/gallery-page.html",
+          "isPartOf": {"@type": "WebSite", "name": "White Dog Pet Partner", "url": "https://whitedogpetgrooming.com/"}
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://whitedogpetgrooming.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://whitedogpetgrooming.com/gallery-page.html"}
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <!-- Header-start -->
@@ -63,12 +104,12 @@
             <img
               class="hide-sticky"
               src="inc/assets/images/logo-light.png"
-              alt="whitedog"
+              alt="White Dog Pet Partner"
             />
             <img
               class="show-sticky"
               src="inc/assets/images/logo-dark.png"
-              alt="whitedog"
+              alt="White Dog Pet Partner"
             />
           </a>
           <div class="header-inner-wrapper">
@@ -256,6 +297,7 @@
         <p class="primary-discription wow animate__animated animate__fadeIn">
           Here’s a little glimpse into our world—unscripted and real.
         </p>
+        <p class="primary-discription wow animate__animated animate__fadeIn">Ready to book? <a href="contact-us-page.html">Contact us</a> or explore our <a href="service-page.html">services</a>.</p>
       </div>
       <div class="container">
         <div class="masonry-gallery">
@@ -394,9 +436,9 @@
                 />
               </svg>
             </div>
-            <h1 class="question-text">
+            <h2 class="question-text">
               So your dog's been annoying you lately?
-            </h1>
+            </h2>
           </div>
                     <div class="question-btn">
                         <a href="https://groomig.pages.dev/user" class="btn btn--orange wow animate__animated animate__pulse" data-wow-duration="2s"> 
